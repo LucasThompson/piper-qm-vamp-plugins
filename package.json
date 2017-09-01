@@ -1,6 +1,6 @@
 {
   "name": "@extractors/qm",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Queen Mary Vamp Plugins library, wrapped as piper service",
   "main": "qm.umd.js",
   "scripts": {
