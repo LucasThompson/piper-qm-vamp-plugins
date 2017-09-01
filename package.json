@@ -4,7 +4,9 @@
   "description": "Queen Mary Vamp Plugins library, wrapped as piper service",
   "main": "qm.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build-client && webpack",
+    "build-client": "tsc -p ./tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/LucasThompson/piper-qm-vamp-plugins/issues"
   },
-  "homepage": "https://github.com/LucasThompson/piper-qm-vamp-plugins#readme"
+  "homepage": "https://github.com/LucasThompson/piper-qm-vamp-plugins#readme",
+  "devDependencies": {
+    "typescript": "^2.5.2",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.5.5",
+    "worker-loader": "^0.8.1"
+  },
+  "dependencies": {
+    "piper-js": "^0.21.0"
+  }
 }
